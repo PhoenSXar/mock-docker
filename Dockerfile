@@ -33,9 +33,10 @@ VOLUME ["/home/yapi/log"]
 USER yapi
 
 RUN mkdir yapi && \
-    git clone https://github.com/PhoenSXar/yapi.git --depth 1 yapi
+    git clone https://github.com/PhoenSXar/yapi.git --depth 1 vendors
 
 # npm install dependencies and run build
-WORKDIR /home/yapi/yapi
+WORKDIR /home/yapi/vendors
 
-RUN npm install
+RUN npm install --production --registry https://registry.npm.taobao.org
+RUN npm i mongoose@4.13.7
