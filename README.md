@@ -5,7 +5,7 @@
 	- work path：`mkdir -p /path/to/somewhere`
 	- ip：`http://192.168.1.121`
 - clone：
-	- `cd /opt/git-data && git clone https://github.com/PhoenSXar/mock-docker.git`
+	- `cd /path/to/somewhere && git clone https://github.com/PhoenSXar/mock-docker.git`
 - permission：
 	- `chmod -R 777 /path/to/somewhere`
 - run command：
