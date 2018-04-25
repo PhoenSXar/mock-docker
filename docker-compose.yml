@@ -18,5 +18,5 @@ services:
         source: ./config.json
         target: /home/yapi/config.json
       - type: bind
-        source: ./data/yapi
+        source: ./data/mock
         target: /home/yapi/log
